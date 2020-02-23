@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { TitleBarComponent } from './title-bar/title-bar.component';
 import {RouterModule, Routes} from '@angular/router';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { StartPageComponent } from './start-page/start-page.component';
+import { TvSeriesContaienrComponent } from './start-page/tv-series-contaienr/tv-series-contaienr.component';
 
 const appRoutes: Routes = [
   // { path: 'serial/:id',      component: HeroDetailComponent },
@@ -17,6 +19,10 @@ const appRoutes: Routes = [
     redirectTo: '/strona-startowa',
     pathMatch: 'full'
   },
+  { path: 'strona-startowa',
+    pathMatch: 'full',
+    component: StartPageComponent
+  },
   { path: '**', component: NotFoundComponent }
 ];
 
@@ -24,7 +30,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     TitleBarComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    StartPageComponent,
+    TvSeriesContaienrComponent
   ],
   imports: [
     BrowserModule,
