@@ -7,6 +7,8 @@ import {RouterModule, Routes} from '@angular/router';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { StartPageComponent } from './start-page/start-page.component';
 import { TvSeriesContaienrComponent } from './start-page/tv-series-contaienr/tv-series-contaienr.component';
+import { TvSerierItemComponent } from './start-page/tv-series-contaienr/tv-serier-item/tv-serier-item.component';
+import {MatCardModule} from '@angular/material/card';
 
 const appRoutes: Routes = [
   // { path: 'serial/:id',      component: HeroDetailComponent },
@@ -32,13 +34,15 @@ const appRoutes: Routes = [
     TitleBarComponent,
     NotFoundComponent,
     StartPageComponent,
-    TvSeriesContaienrComponent
+    TvSeriesContaienrComponent,
+    TvSerierItemComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(
       appRoutes,
-    )
+    ),
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

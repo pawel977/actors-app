@@ -1,5 +1,8 @@
+@import "src/variables";
+
+
 .wrapper {
-  min-height: 100px;
+  height: $app-title-bar-height;
   background-color: black;
 }
 
