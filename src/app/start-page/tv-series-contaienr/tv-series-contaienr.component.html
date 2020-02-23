@@ -1,1 +1,7 @@
-<ng-container></ng-container>
+<div class="wrapper container d-flex">
+  <div class="row d-flex  justify-content-between align-items-center">
+  <ng-container *ngFor="let card of cards$ | async" >
+    <app-tv-serier-item class="col-lg-4 col-12 my-2 mb-lg-0"  [data]="card" ></app-tv-serier-item>
+  </ng-container>
+  </div>
+</div>
