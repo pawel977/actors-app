@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "imie": "Jared",
+    "nazwisko": "Harris",
+    "serialID": 1
+  },
+  {
+    "id": 2,
+    "imie": "Stellan",
+    "nazwisko": "Skarsgard",
+    "serialID": 1
+  },
+  {
+    "id": 3,
+    "imie": "Emily",
+    "nazwisko": "Watson",
+    "serialID": 1
+  },
+  {
+    "id": 4,
+    "imie": "Jessie",
+    "nazwisko": "Buckley",
+    "serialID": 1
+  },
+  {
+    "id": 5,
+    "imie": "Peter",
+    "nazwisko": "Dinklage",
+    "serialID": 2
+  },
+  {
+    "id": 6,
+    "imie": "Lena",
+    "nazwisko": "Headey",
+    "serialID": 2
+  },
+  {
+    "id": 7,
+    "imie": "Emilia",
+    "nazwisko": "Clarke",
+    "serialID": 2
+  },
+  {
+    "id": 8,
+    "imie": "Kit",
+    "nazwisko": "Harington",
+    "serialID": 2
+  },
+  {
+    "id": 9,
+    "imie": "Bryan",
+    "nazwisko": "Cranston",
+    "serialID": 3
+  },
+  {
+    "id": 10,
+    "imie": "Aaron",
+    "nazwisko": "Paul",
+    "serialID": 3
+  },
+  {
+    "id": 11,
+    "imie": "Anna",
+    "nazwisko": "Gunn",
+    "serialID": 3
+  },
+  {
+    "id": 12,
+    "imie": "Dean",
+    "nazwisko": "Norris",
+    "serialID": 3
+  }
+]
