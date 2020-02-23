@@ -9,17 +9,21 @@ import { StartPageComponent } from './start-page/start-page.component';
 import { TvSeriesContaienrComponent } from './start-page/tv-series-contaienr/tv-series-contaienr.component';
 import { TvSerierItemComponent } from './start-page/tv-series-contaienr/tv-serier-item/tv-serier-item.component';
 import {MatCardModule} from '@angular/material/card';
+import { DetailsOfTvSerialComponent } from './details-of-tv-serial/details-of-tv-serial.component';
 
 const appRoutes: Routes = [
   // { path: 'serial/:id',      component: HeroDetailComponent },
-  /*{
-    path: 'heroes',
-    component: HeroListComponent,
-    data: { title: 'Heroes List' }
-  },*/
+  {
+    path: 'serial',
+    children: [{
+      path: ':id',
+      component: DetailsOfTvSerialComponent
+    }]
+  },
   { path: '',
     redirectTo: '/strona-startowa',
-    pathMatch: 'full'
+    pathMatch: 'full',
+    data: { title: 'Strona startowa' }
   },
   { path: 'strona-startowa',
     pathMatch: 'full',
@@ -35,7 +39,8 @@ const appRoutes: Routes = [
     NotFoundComponent,
     StartPageComponent,
     TvSeriesContaienrComponent,
-    TvSerierItemComponent
+    TvSerierItemComponent,
+    DetailsOfTvSerialComponent
   ],
   imports: [
     BrowserModule,
