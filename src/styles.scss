@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   font-family: 'Varela Round', Arial ;
+  // @TODO odkomentowac
+  // animation: init .7s forwards;
 }
 html, body {
   margin: 0;
@@ -20,3 +22,8 @@ h1 {
   font-size: 32px;
 }
 
+@keyframes init {
+  from {opacity: 0}
+  to {opacity: 1}
+
+}
